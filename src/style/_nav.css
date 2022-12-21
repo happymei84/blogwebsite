@@ -1,0 +1,25 @@
+
+
+nav {
+    background-color: lightcoral;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: right;
+    line-height: 50px;
+
+    
+}
+
+ul{
+    width: 290px;
+    padding-right: 10px;
+    justify-content: right;
+}
+a{
+    color: rgb(2, 38, 70);
+    margin: 2%;
+    font-size: large;
+}

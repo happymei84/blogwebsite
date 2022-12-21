@@ -1,0 +1,13 @@
+div.search{
+    position: relative;
+    display: inline-block;
+    width: 290px;
+    padding-right: 10px;
+    justify-content: center;
+}
+
+input,button{
+    font-size: 1rem;
+    padding: 0.25rem;
+    border: 2px solid rgb(43, 0, 43);
+}
