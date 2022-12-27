@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import Select from "../component/Select";
-import PostContainer from "../component/PostContainer"
+import PostContainer from "../component/PostContainer";
 
 const Homepage = () => {
   let [inputdata, setdata] = useState([]);
+
   useEffect(() => {
     fetch("https://localhost:7175/Content/outputContent", {
       method: "POST",
@@ -18,18 +19,17 @@ const Homepage = () => {
       .then((response) => response.json())
       .then((data) => {
         setdata(data.returnData);
-        console.log(inputdata);
       })
       .catch((error) => console.error(error));
   }, []);
 
   return (
     <div>
+      <div className="hotpost">熱門文章</div>
       <Select />
-      <a href="/post">我要發文</a>
       {inputdata.map((data) => (
         <>
-        <PostContainer inputData={data}/>
+          <PostContainer inputData={data} />
         </>
       ))}
     </div>

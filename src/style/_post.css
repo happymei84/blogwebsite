@@ -1,3 +1,16 @@
-.Bod{
+div{
+    color: rgb(10, 116, 255);
    
+}
+ 
+div.identity{
+    display: flex;
+    justify-content: right;
+ }
+ 
+div.hotpost{
+    font-size: larger;
+    color: rgb(13, 13, 13);
+    font-weight: bold;
+    text-align: center;  
 }

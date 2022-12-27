@@ -32,6 +32,7 @@ const Regist = () => {
           setwarning(true);
         } else if (data === true) {
           setwarning(false);
+          alert("註冊成功!請重新登入")
           navigate("/Login") //導頁
         }
       })

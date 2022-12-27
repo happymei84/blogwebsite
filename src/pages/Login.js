@@ -1,9 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   let [account, setaccount] = useState("");
   let [password, setpassword] = useState("");
-  
+  let navigate = useNavigate();
   const subfunction = (e) => {
     e.preventDefault();
     console.log(JSON.stringify({ account: account, password: password }));
@@ -17,7 +18,8 @@ const Login = () => {
       .then((response) => response.json())
       .then((data) => {
         if (data === true) {
-          alert("登陸月球成功");
+          alert("登入成功");
+          navigate("/");
         } else if (data === false) {
           alert("帳號/密碼錯誤");
         }

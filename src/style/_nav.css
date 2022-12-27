@@ -1,25 +1,31 @@
-
-
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans TC", sans-serif;
+}
 nav {
-    background-color: lightcoral;
-    position: relative;
-    width: 100%;
+    background-color: #a1e169;
+    padding: 0.5rem;
+}
+ 
+nav ul {
     display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
     justify-content: right;
-    line-height: 50px;
-
-    
-}
-
-ul{
-    width: 290px;
-    padding-right: 10px;
-    justify-content: right;
-}
-a{
-    color: rgb(2, 38, 70);
-    margin: 2%;
-    font-size: large;
-}
+    list-style-type: none;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #026915;
+    margin: 1rem;
+    font-size: 1.25rem;
+    transition: all 0.3s ease;
+    font-weight: bold;
+  }
+  h1.title{
+    color: #007808;
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    font-size: 2rem;
+  }

@@ -28,7 +28,7 @@ const Article = () => {
   }, [rowid]);
 
   return (
-      <div className="Bod">
+      <div>
        <PostContainer inputData={inputdata}/>
       </div>
     
