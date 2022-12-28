@@ -1,11 +1,19 @@
 import React from 'react'
+import '../style/_search.css'
 
-const Search = () => {
+const Search = ({setinput,input}) => {
+  const inputhandler = (e) =>{   
+    setinput(e.target.value)
+  }
+
+  const searchFunction = () =>{
+   
+  }
   return (
-    <div className='search'>
-      <input type="text" />
+    <form className='search' onSubmit={searchFunction}>
+      <input type="text" onChange={inputhandler} value={input} />
       <button>Search</button>
-    </div>
+   </form>
   )
 }
 

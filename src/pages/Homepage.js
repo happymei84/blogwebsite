@@ -4,6 +4,7 @@ import PostContainer from "../component/PostContainer";
 
 const Homepage = () => {
   let [inputdata, setdata] = useState([]);
+  const [input, setinput] = useState("");
 
   useEffect(() => {
     fetch("https://localhost:7175/Content/outputContent", {
@@ -26,7 +27,7 @@ const Homepage = () => {
   return (
     <div>
       <div className="hotpost">熱門文章</div>
-      <Select />
+      <Select setinput={setinput} input={input} />
       {inputdata.map((data) => (
         <>
           <PostContainer inputData={data} />
