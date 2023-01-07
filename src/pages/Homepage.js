@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import Select from "../component/Select";
 import PostContainer from "../component/PostContainer";
 
+
+
 const Homepage = () => {
   let [inputdata, setdata] = useState([]);
   const [input, setinput] = useState("");

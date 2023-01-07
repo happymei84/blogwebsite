@@ -1,14 +1,13 @@
-import React from 'react'
+import React from "react";
 
-
-const PostContainer = ({inputData}) => {
+const PostContainer = ({ inputData }) => {
   return (
-    <div className='journal'>
+    <div className="journal">
       <div>{inputData.postTitle}</div>
       <div>{inputData.postContent}</div>
-      <span>============================</span>
+      <span>************</span>
     </div>
-  )
-}
- 
-export default PostContainer
+  );
+};
+
+export default PostContainer;

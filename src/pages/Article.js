@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import '../style/_post.css'
-import PostContainer from "../component/PostContainer"
+import "../style/_post.css";
+import PostContainer from "../component/PostContainer";
 
 const Article = () => {
   const location = useLocation(); //uselocation跟navigate要一起用(導頁跟被導頁)(location存值)
@@ -14,6 +14,7 @@ const Article = () => {
       body: JSON.stringify({
         //要傳去後端的值
         RowId: rowid,
+        
       }),
       headers: {
         "Content-Type": "application/json",
@@ -22,16 +23,14 @@ const Article = () => {
       .then((response) => response.json())
       .then((data) => {
         setdata(data.returnData[0]);
-       
       })
       .catch((error) => console.error(error));
   }, [rowid]);
 
   return (
-      <div>
-       <PostContainer inputData={inputdata}/>
-      </div>
-    
+    <div>
+      <PostContainer inputData={inputdata} />
+    </div>
   );
 };
 
