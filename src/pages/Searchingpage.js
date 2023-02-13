@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import PostContainer from "../component/PostContainer";
 
+
 const Searchingpage = () => {
   const location = useLocation([]);
   const { searchValue } = location.state;
